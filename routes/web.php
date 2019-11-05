@@ -39,8 +39,9 @@ Route::get('/', function () {
 
     //$post = \App\Post::find(1);
     //$post->delete();
-    $post = \App\Post::destroy(2);
+    //$post = \App\Post::destroy(2);
+    //$post->delete();
+    $post = \App\Post::destroy(3,5,7);
     $post->delete();
-
 });
 
