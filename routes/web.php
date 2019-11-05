@@ -32,10 +32,14 @@ Route::get('/', function () {
         //'title' => 'updated title',
         //'content' => 'updated content',
     //]);
+    //$post = \App\Post::find(1);
+    //$post->title = 'saved title';
+    //$post->content = 'savted content';
+    //$post->save();
+
     $post = \App\Post::find(1);
-    $post->title = 'saved title';
-    $post->content = 'savted content';
-    $post->save();
+    $post->delete();
+
 
 });
 
