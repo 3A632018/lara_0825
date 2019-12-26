@@ -15,4 +15,7 @@ class Post extends Model
         'is_feature'
     ];
 
+
+
+
 }
