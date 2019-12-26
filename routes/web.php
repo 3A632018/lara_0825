@@ -43,9 +43,13 @@ Route::get('/', function () {
     //$post->delete();
     //$post = \App\Post::destroy(3,5,7);
     //$post->delete();
-    $allPosts=\App\Post::all();
-    dd($allPosts);
-    $featuredPosts = \App\Post::where('is_feature', 1)->get();
-    dd($featuredPosts);
+    //$allPosts=\App\Post::all();
+    //dd($allPosts);
+    //$featuredPosts = \App\Post::where('is_feature', 1)->get();
+    //dd($featuredPosts);
+    $post = \App\Post::find(4);
+    dd($post);
+    $lastPost = \App\Post::orderBy('id', 'DESC')->first();
+    dd($lastPost);
 });
 
